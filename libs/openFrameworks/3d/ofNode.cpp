@@ -102,12 +102,12 @@ ofNode & ofNode::operator=(ofNode && node){
 
 //----------------------------------------
 void ofNode::addListener(ofNode & node){
-	position.addListener(&node, &ofNode::onParentPositionChanged);
+	/*position.addListener(&node, &ofNode::onParentPositionChanged);
 	orientation.addListener(&node, &ofNode::onParentOrientationChanged);
 	scale.addListener(&node, &ofNode::onParentScaleChanged);
 	position.enableEvents();
 	orientation.enableEvents();
-	scale.enableEvents();
+	scale.enableEvents();*/
 	children.insert(&node);
 }
 
